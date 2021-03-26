@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Home from "./components/Home";
+import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+import About from "../src/components/About";
 
 function App() {
+  const getMode = () => {
+    return JSON.parse(localStorage.getItem("mood")) || false;
+  };
+
+  const [darkmood, setDarkmood] = useState(getMode());
+  useEffect(() => {
+    localStorage.setItem("mood", JSON.stringify(darkmood));
+  }, [darkmood]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkmood ? "app dark-mode" : "app"}>
+      <Home Darkmood={setDarkmood} darkmood={darkmood} />
+      <About />
     </div>
   );
 }

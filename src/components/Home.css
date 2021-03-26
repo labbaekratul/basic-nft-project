@@ -1,0 +1,168 @@
+.home {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.home__container {
+  position: absolute;
+  top: 0;
+}
+
+.home__row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.home__manu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__manu > button {
+  margin: 0 25px;
+  color: #fb947d;
+}
+
+.home__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home__signUp {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home__signUpLink {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.home__signUpTwo {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home__signUpRes {
+  width: 150px;
+  margin-top: 22px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.home__signUpRes:hover {
+  -webkit-box-shadow: 5px 5px 9px 10px #ffd6bf;
+  box-shadow: 5px 5px 9px 10px #ffd6bf;
+}
+
+@media only screen and (max-width: 770px) {
+  .home__manu {
+    display: none !important;
+  }
+  .home__signUp {
+    display: none !important;
+  }
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #fc354c 0%,
+    #0abfbc 51%,
+    #fc354c 100%
+  );
+}
+.btn-grad {
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 25px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  -webkit-box-shadow: 5px 5px 13px 13px #ffd6bf;
+  box-shadow: 5px 5px 13px 13px #ffd6bf;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* DarkMood button*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 3px;
+  left: 2px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4e7ea5;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #6e9abf;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
