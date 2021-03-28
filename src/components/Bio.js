@@ -1,19 +1,19 @@
 import React from "react";
 import kitty from "../img/un3.png";
-import "./About.css";
+import "./Bio.css";
 
-function About() {
+function Bio() {
   return (
-    <div className="about container">
-      <div className="row  about__row">
-        <div className="col-12 col-lg-6 about__kittyimg">
+    <div className="Bio container">
+      <div className="row  Bio__row">
+        <div className="col-12 col-lg-6 Bio__kittyimg">
           <img className="kitty__img" src={kitty} />
           <div className="kitty__imgInfo">
             <span>Criptokitties</span>
             <p>My nam Jeff</p>
           </div>
         </div>
-        <div className="col-12 col-lg-6 about__artical">
+        <div className="col-12 col-lg-6 Bio__artical">
           <h1>NFT Social Link</h1>
           <p>
             NFTs bio is the only link you need.
@@ -33,4 +33,4 @@ function About() {
   );
 }
 
-export default About;
+export default Bio;

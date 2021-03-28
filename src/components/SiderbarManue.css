@@ -1,0 +1,70 @@
+.sidebarManu {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -50px;
+  display: none;
+}
+
+.togglebtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  background: #91c5fc;
+  padding: 10px;
+}
+
+.sidebarManu__list {
+  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(21, 230, 203, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  z-index: 100;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.sidebarManu__list > div > .sidebarmenu__link {
+  padding: 40px 20px;
+  z-index: 100;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebarManu__list > div > .sidebarmenu__link:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(21, 230, 203, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  transition: 0.5s;
+}
+
+.sidebarManu__list > div {
+  height: 100vh;
+}
+
+@media (max-width: 770px) {
+  .sidebarManu {
+    display: flex;
+  }
+}

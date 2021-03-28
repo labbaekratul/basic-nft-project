@@ -1,15 +1,15 @@
-.about {
+.Bio {
   margin-top: 70px;
 }
 
-.about__row {
+.Bio__row {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
 
-.about__kittyimg {
+.Bio__kittyimg {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,14 +29,14 @@
   font-size: 18px;
 }
 
-.about__artical {
+.Bio__artical {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
-.about__artical > h1 {
+.Bio__artical > h1 {
   margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@
   height: 300px;
 }
 
-.about__artical > p {
+.Bio__artical > p {
   line-height: 21.5px;
   font-weight: 400;
   background: -webkit-linear-gradient(#ff4b4b, #861388);

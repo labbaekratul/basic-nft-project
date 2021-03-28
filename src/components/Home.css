@@ -15,6 +15,11 @@
   padding: 10px;
 }
 
+.Button {
+  color: #fc354c;
+  text-decoration: none;
+}
+
 .home__manu {
   display: flex;
   justify-content: center;
@@ -93,6 +98,7 @@
   border: none;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
 }
 
 .btn-grad:hover {
